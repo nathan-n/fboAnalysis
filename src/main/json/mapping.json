@@ -1,0 +1,34 @@
+{
+    "mappings": {
+        "post": {
+            "properties": {
+                "solicitation_number": {"type": "string", "store": "no", "index": "not_analyzed"},
+                "date": {"type": "date", "store": "no", "index": "analyzed"},
+                "response_date": {"type": "date", "store": "no", "index": "analyzed"},
+                "agency": {"type": "string", "store": "no", "index": "analyzed"},
+                "office": {"type": "string", "store": "no", "index": "analyzed"},
+                "location": {"type": "string", "store": "no", "index": "analyzed"},
+                "zip": {"type": "string", "store": "no", "index": "analyzed"},
+                "classification_code": {"type": "string", "store": "no", "index": "analyzed"},
+                "naics": {"type": "integer", "store": "no", "index": "analyzed"},
+                "subject": {"type": "string", "store": "yes", "index": "analyzed"},
+                "response_date": {"type": "string", "store": "no", "index": "analyzed"},
+                "contact": {"type": "string", "store": "yes", "index": "analyzed"},
+                "description": {"type": "string", "store": "yes", "index": "analyzed"},
+                "link": {"type": "string", "store": "yes", "index": "not_analyzed"},
+                "url": {"type": "string", "store": "yes", "index": "not_analyzed"},
+                "pop_country": {"type": "string", "store": "no", "index": "not_analyzed"},
+                "pop_zip": {"type": "string", "store": "no", "index": "analyzed"},
+                "pop_address": {"type": "string", "store": "yes", "index": "analyzed"},
+                "setaside": {"type": "string", "store": "yes", "index": "analyzed"},
+                "solicitation_type": {"type": "string", "store": "no", "index": "not_analyzed"},
+                "": {"type": "string", "store": "no", "index": "analyzed"},
+                "": {"type": "string", "store": "no", "index": "analyzed"},
+                "": {"type": "string", "store": "no", "index": "analyzed"},
+                "": {"type": "string", "store": "no", "index": "analyzed"},
+                "": {"type": "string", "store": "no", "index": "analyzed"},
+                "": {"type": "string", "store": "no", "index": "analyzed"},
+            }
+        }
+    }
+}
