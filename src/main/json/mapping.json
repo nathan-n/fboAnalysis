@@ -1,66 +1,55 @@
 {
+  "template": "fbo*",
+  "settings": {
+    "number_of_shards": 1
+  },
   "mappings": {
-    "post": {
-      "properties": {
-        "solicitation_number": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "date": {
-          "type": "date",
-          "format": "basic_date"
-        },
-        "response_date": {
-          "type": "date",
-          "format": "basic_date"
-        },
-        "agency": {
-          "type": "string"
-        },
-        "office": {
-          "type": "string"
-        },
-        "location": {
-          "type": "string"
-        },
-        "zip": {
-          "type": "string"
-        },
-        "classification_code": {
-          "type": "string"
-        },
-        "naics": {
-          "type": "integer"
-        },
-        "subject": {"type": "string"},
-        "response_date": {
-          "type": "string",
-        },
-        "contact": {"type": "string"},
-        "description": {"type": "string"},
-        "link": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "url": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "pop_country": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "pop_zip": {
-          "type": "string",
-          "index": "analyzed"
-        },
-        "pop_address": {"type": "string"},
-        "setaside": {"type": "string"},
-        "solicitation_type": {
-          "type": "string",
-          "index": "not_analyzed"
-        }
-      }
+    "notices": {
+      "sol_number": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "date": {
+        "type": "date",
+        "format": "MMddyyyy"
+      },
+      "response_date": {
+        "type": "date",
+        "format": "MMddyyyy"
+      },
+      "agency": {
+        "type": "string"
+      },
+      "office": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string"
+      },
+      "zip": {
+        "type": "string"
+      },
+      "classification_code": {
+        "type": "string"
+      },
+      "naics": {
+        "type": "integer"
+      },
+      "subject": {"type": "string"},
+      "office_addr": {
+        "type": "string"
+      },
+      "contact": {"type": "string"},
+      "description": {"type": "string"},
+      "link": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "url": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "setaside": {"type": "string"}
     }
   }
 }
